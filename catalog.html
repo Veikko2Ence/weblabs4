@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог автомобилей</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <p class="author">Автомобильный мир</p>
+    <h1 class="title">КАТАЛОГ АВТОМОБИЛЕЙ</h1>
+  </header>
+
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="page2.html">Русский автопром</a></li>
+      <li><a href="page3.html">Электромобили</a></li>
+      <li><a href="catalog.html" class="active">Каталог</a></li>
+      <li><a href="product.html">Модели</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <header>
+        <h2>Каталог автомобилей</h2>
+        <p>Выберите подходящий автомобиль из нашего обширного каталога</p>
+      </header>
+
+      <aside class="filters">
+        <h3>Фильтры</h3>
+        <div class="filter-group">
+          <label>Тип кузова:</label>
+          <select>
+            <option>Все</option>
+            <option>Седан</option>
+            <option>Внедорожник</option>
+            <option>Хэтчбек</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>Цена до:</label>
+          <input type="range" min="0" max="10000000" value="5000000">
+        </div>
+      </aside>
+
+      <div class="catalog-grid">
+        <article class="product-card">
+          <img src="vesta-1.jpg" alt="Lada Vesta" class="product-image">
+          <h3>Lada Vesta</h3>
+          <p class="price">1 200 000 ₽</p>
+          <p class="description">Компактный седан с современным дизайном</p>
+          <!-- <form action="product.html" target="_blank">
+            <button class="details-btn">Подробнее</button>
+          </form>
+           -->
+          <button onclick="document.location='product.html' " class="details-btn">Подробнее</button>
+        </article>
+
+        <article class="product-card">
+          <img src="uaz-patriot.jpg" alt="UAZ Patriot" class="product-image">
+          <h3>UAZ Patriot</h3>
+          <p class="price">1 800 000 ₽</p>
+          <p class="description">Надёжный внедорожник для любых дорог</p>
+          <button class="details-btn">Подробнее</button>
+        </article>
+
+        <article class="product-card">
+          <img src="gazelle-next.jpg" alt="GAZelle NEXT" class="product-image">
+          <h3>GAZelle NEXT</h3>
+          <p class="price">2 100 000 ₽</p>
+          <p class="description">Коммерческий автомобиль для бизнеса</p>
+          <button class="details-btn">Подробнее</button>
+        </article>
+
+      </div>
+
+      <nav class="pagination">
+        <a href="#">1</a>
+        <a href="#" class="active">2</a>
+        <a href="#">3</a>
+        <span>...</span>
+        <a href="#">10</a>
+      </nav>
+    </section>
+  </main>
+
+  <footer>
+    <p>Лабораторная работа по web-программированию</p>
+    <p>Студент: <span class="student-name">Сандберг Кирилл</span>, группа: <span class="group">22207</span></p>
+  </footer>
+</body>
+</html>
